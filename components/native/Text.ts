@@ -11,10 +11,18 @@ export const Text = styled.Text<TextProps>`
   color: ${({ color, theme }) => color || theme.COLORS.WHITE};
   font-size: ${({ size }) => size ? `${size}px` : '16px'};
 `
+
 //Change the name of the font using this on the App.tsx
 const [fontsLoaded] = useFonts({
     Inter_300: Inter_300Light,
     Inter_400: Inter_400Regular,
     Inter_500: Inter_500Medium,
     Inter_700: Inter_700Bold,
+  })
+
+//Using Custom Fonts
+const [fontsLoaded] = useFonts({
+    'GeneralSans-400': require('./src/assets/fonts/GeneralSans-Regular.otf'),
+    'GeneralSans-600': require('./src/assets/fonts/GeneralSans-Semibold.otf'),
+    'GeneralSans-700': require('./src/assets/fonts/GeneralSans-Bold.otf')
   })
