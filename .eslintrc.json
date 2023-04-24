@@ -11,5 +11,7 @@
       "error",
       "always",
       { "objectsInObjects": false, "arraysInObjects": false }
-    ]
+    ],
+    "space-infix-ops": ["error", { "int32Hint": false }],
+    "keyword-spacing": ["error", { "before": true, "after": true }]
   }
