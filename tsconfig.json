@@ -21,3 +21,13 @@ DE BOX SHADOW
         }
       }
     ]
+
+OS PLUGINS VEM DENTRO DO COMPILER OPTIONS
+"compilerOptions": {
+    "strict": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "plugins": []
+  }
