@@ -1,14 +1,14 @@
-import styled from 'styled-components/native'
+import styled, { DefaultTheme } from 'styled-components/native'
 
 interface TextProps {
-  weight?: '300' | '400' | '500' | '700'
-  color?: string
+  weight?:  keyof DefaultTheme['WEIGHT']
+  color?: keyof DefaultTheme['COLORS']
   size?: number
 }
 
 export const Text = styled.Text<TextProps>`
-  font-family: ${({ weight }) => weight ? `Inter_${weight}` : 'Inter_400'};
-  color: ${({ color, theme }) => color || theme.COLORS.WHITE};
+  font-family: ${({ theme, weight }) => weight ? `Inter_${theme.WEIGHT[weight]}` : 'Inter_400'};
+  color: ${({ theme, color }) => color ? theme.COLORS[color] : theme.COLORS.TEXT};
   font-size: ${({ size }) => size ? `${size}px` : '16px'};
 `
 
