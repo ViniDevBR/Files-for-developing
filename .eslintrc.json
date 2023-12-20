@@ -4,8 +4,9 @@
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-unused-vars": "warn",
-    "indent": ["error", 2],
-    "linebreak-style": ["error", "windows"],
+    "indent": "off",
+    "@typescript-eslint/indent": ["error", 2],
+    //"linebreak-style": ["error", "windows"],
     "quotes": ["error", "single"],
     "semi": ["error", "never"],
     "object-curly-spacing": [
