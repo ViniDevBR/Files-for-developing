@@ -4,4 +4,4 @@ export function cnpjMask(value: string) {
 
   return value.replace(regex, result)
 }
-//57.146.179/0001-07
+//00.000.000/0000-00
