@@ -4,3 +4,4 @@ export function cellPhoneMask(value: string) {
 
   return value.replace(regex, result)
 }
+//(00) 00000-0000
