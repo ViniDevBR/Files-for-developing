@@ -4,3 +4,4 @@ export function cpfMask(value: string) {
 
   return value.replace(regex, result)
 }
+//000.000.000-00
