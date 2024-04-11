@@ -2,6 +2,11 @@ import { format } from 'date-fns'
 
 //Need install DATE-FNS
 
+export function formatDataCustom(date: string, formatDate?: string){
+
+  return format(new Date(date), formatDate || 'dd/MM/yyyy')
+}
+
 export function formatData(date: string) {
 
   return format(new Date(date), 'dd/MM/yyyy')
