@@ -1,4 +1,5 @@
-//On react native need to install intl and use -----> {
+//On react native need to install intl and use -----> 
+{
 //INTL
 import 'intl'
 import 'intl/locale-data/jsonp/pt-BR'
