@@ -7,3 +7,16 @@ export const dateWithoutTimezone = (date: Date) => {
     .slice(0, -1); // REMOVE O Z do final
   return withoutTimezone;
 };
+
+export const dataHoraBrasil = new Date()
+  .toLocaleString('pt-BR', {
+    timeZone: 'America/Sao_Paulo',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+    formatMatcher: 'best fit'
+  })
+  .replace(/,/g, '')
